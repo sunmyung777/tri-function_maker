@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+	<title>그래프 그리기</title>
+	<script type="text/javascript" src="{{url_for('static',filename='js/jquery.js')}}"></script>
+</head>
+<body>
+	<div class="background">
+		<div class="cover">
+			<div class="title">Let's make our own Graph!</div>
+			<form method="post" action="/input" class="formtag">
+				<div class="input">
+
+				</div>
+				<input type="hidden" name="graph_type" value="sin" class="type_check">
+				<input type="submit" value="그리기">
+			</form>
+			<div class="select">			
+				<button id="a">사인함수</button>
+				<button id="b">코사인함수</button>
+				<button id="c">탄젠트함수</button>
+			</div>
+			<div class="graph">
+				<div class="graph_cover">
+					<iframe src="/new" width="700px" height="600px" scrolling="no" frameborder="0"></iframe>
+				</div>
+			</div>
+			<div class="graph_info"></div>
+	</div>
+	</div>
+	<script type="text/javascript" src="{{ url_for('static',filename='js/main.js')}}"></script>
+</body>
+</html>

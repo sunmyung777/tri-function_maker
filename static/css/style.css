@@ -1,0 +1,40 @@
+.graph{
+	width:700px;
+	height:600px;
+	overflow:hidden;
+	margin-left: 50px;
+}
+body{
+	margin:0;
+	background-image: url('https://cdn.pixabay.com/photo/2016/07/06/15/29/math-1500720_1280.jpg');
+	background-size: cover;
+}
+.background{
+	width:100vw;
+	height:100vh;
+	background-color: rgba(0,0,0,0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.title{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 40px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+.cover{
+	width:800px;
+	height:700px;
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.formtag{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10px;
+}
